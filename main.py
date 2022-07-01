@@ -4,6 +4,7 @@ from docx import Document
 
 def search(keyword):
     file_list = []
+    found = 0
     for root, dirs, files in os.walk(os.getcwd()):
         for file in files:
             if os.path.join(root, file).endswith(".docx") or os.path.join(root, file).endswith(".txt"):
@@ -22,8 +23,9 @@ def search(keyword):
                         if keyword in line:
                             filePath = os.path.relpath(file, os.getcwd())
                             print(
-                                f"\nKeyword: \"{keyword}\" File: \"{filePath}\" Line: \"{lineIndex}\"")
+                                f"\nFile: \"{filePath}\" Line: \"{lineIndex}\"")
                             lineIndex += 1
+                            found += 1
                         else:
                             lineIndex += 1
                             break
@@ -35,12 +37,14 @@ def search(keyword):
                 for line in file_contents:
                     if keyword in line:
                         filePath = os.path.relpath(file, os.getcwd())
-                        print(
-                            f"\nKeyword: \"{keyword}\" File: \"{filePath}\" Line: \"{lineIndex}\"")
+                        print(f"\nFile: {filePath}, Line: {lineIndex}")
                         lineIndex += 1
+                        found += 1
                     else:
                         lineIndex += 1
                         break
+    if found == 0:
+        print("\nKeyword not found")
 
 
 os.system('COLOR 0b')
