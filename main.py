@@ -47,6 +47,7 @@ def search(keyword):
         print("\nKeyword not found")
 
 
+os.system('TITLE Note Searcher')
 os.system('COLOR 0b')
 print("\nWelcome to Note Searcher")
 while True:
