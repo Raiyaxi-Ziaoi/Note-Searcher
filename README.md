@@ -5,6 +5,8 @@
 </h2></div>
 <br/>
 
+Place in the directory of notes and run main.py. Once you enter the keyword, it will search all files in this directory and sub-directories.
+
 <i>
     Note: I am a beginner to Python so feel free to clone this repository to edit and optimise the code.
 </i>
