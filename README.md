@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/lRzzpEU.png"></img>
+
 # Note-Searcher
 
 <div align="center"><h2>
