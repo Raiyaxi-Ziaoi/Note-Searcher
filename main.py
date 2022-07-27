@@ -46,13 +46,15 @@ def search(keyword):
     if found == 0:
         print("\nKeyword not found")
 
-
-os.system('TITLE Note Searcher')
-os.system('COLOR 0b')
-print("\nWelcome to Note Searcher")
-while True:
-    print("\nType exit to exit")
-    keyword = input("\nPlease enter a keyword to search for: ")
-    search(keyword)
-print("\nThank you for using Note Searcher")
-input("\nPress enter to exit...")
+if __name__ == "__main__":
+    os.system('TITLE Note Searcher')
+    os.system('COLOR 0b')
+    print("\nWelcome to Note Searcher")
+    while True:
+        print("\nType exit to exit")
+        keyword = input("\nPlease enter a keyword to search for: ")
+        if keyword.lower() == "exit":
+            break
+        search(keyword)
+    print("\nThank you for using Note Searcher")
+    input("\nPress enter to exit...")
