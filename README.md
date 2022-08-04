@@ -1,6 +1,6 @@
 <img src="https://i.imgur.com/lRzzpEU.png"></img>
 
-# Note-Searcher
+# Scrubber
 
 <div align="center"><h2>
     A program that searches your notes for specific keywords made in Python<br/><br/>Made by Raiyaxi Ziaoi
