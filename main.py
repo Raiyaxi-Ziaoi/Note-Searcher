@@ -52,9 +52,9 @@ def search(keyword):  # Searches
 
 
 if __name__ == "__main__":  # Main
-    os.system('TITLE Note Searcher')
+    os.system('TITLE Scrubber')
     os.system('COLOR 0b')
-    print("Welcome to Note Searcher")
+    print("Welcome to Scrubber")
     while True:
         print("\nType EXIT to exit the program.")
         keyword = input("\nPlease enter a keyword to search for: ")
