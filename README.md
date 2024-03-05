@@ -3,7 +3,7 @@
 # Scrubber
 
 <div align="center"><h2>
-    A program that searches your notes for specific keywords made in Python<br/><br/>Made by Raiyaxi Ziaoi
+    A program that searches your notes for specific keywords made in Python<br/><br/>>Made by Abu Hurayrah
 </h2></div>
 <br/>
 
